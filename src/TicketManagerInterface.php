@@ -10,7 +10,7 @@ interface TicketManagerInterface
 
     public function identify(TicketInterface $ticket): ?IdentityInterface;
 
-    public function generate(CredentialsInterface $credentials, IdentityInterface $identity): TicketInterface;
+    public function generate(CredentialsInterface $credentials, IdentityInterface $identity): ?TicketInterface;
 
     public function storeTicket(TicketInterface $ticket): void;
 }
