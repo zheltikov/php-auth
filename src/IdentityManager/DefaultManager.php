@@ -1,8 +1,13 @@
 <?php
 
-namespace Zheltikov\Auth;
+namespace Zheltikov\Auth\IdentityManager;
 
-class IdentityManager implements IdentityManagerInterface
+use Zheltikov\Auth\CredentialsManagerInterface;
+use Zheltikov\Auth\IdentityInterface;
+use Zheltikov\Auth\IdentityManagerInterface;
+use Zheltikov\Auth\TicketManagerInterface;
+
+class DefaultManager implements IdentityManagerInterface
 {
     public function identify(
         CredentialsManagerInterface $credentialsManager,
