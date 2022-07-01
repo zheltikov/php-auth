@@ -1,0 +1,29 @@
+{
+  "version": "0.0.1",
+  "name": "zheltikov/php-auth",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Zheltikov\\Auth\\": "src/"
+    },
+    "files": [
+    ]
+  },
+  "require": {
+    "php": ">=8.0",
+    "psr/http-message": "^1.0"
+  },
+  "require-dev": {
+    "nazar-pc/phpt-tests-runner": "^1.4"
+  },
+  "authors": [
+    {
+      "name": "Max Zheltikov",
+      "homepage": "https://github.com/zheltikov"
+    }
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "phpt-tests-runner tests/"
+  }
+}
