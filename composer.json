@@ -11,7 +11,8 @@
   },
   "require": {
     "php": ">=8.0",
-    "psr/http-message": "^1.0"
+    "psr/http-message": "^1.0",
+    "guzzlehttp/psr7": "^2.4"
   },
   "require-dev": {
     "nazar-pc/phpt-tests-runner": "^1.4"
