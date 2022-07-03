@@ -11,4 +11,14 @@ class UserPassword implements CredentialsInterface
         protected string $password,
     ) {
     }
+
+    public function getUser(): string
+    {
+        return $this->user;
+    }
+
+    public function getPassword(): string
+    {
+        return $this->password;
+    }
 }
