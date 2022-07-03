@@ -4,7 +4,6 @@ namespace Zheltikov\Auth\TicketManager;
 
 use Psr\Http\Message\RequestInterface;
 use Zheltikov\Auth\Ticket\Token;
-use Zheltikov\Auth\TicketInterface;
 use Zheltikov\Auth\TicketManagerInterface;
 
 abstract class BearerManager implements TicketManagerInterface
@@ -28,14 +27,5 @@ abstract class BearerManager implements TicketManagerInterface
         }
 
         return null;
-    }
-
-    public function storeTicket(TicketInterface $ticket): void
-    {
-        if (!$ticket instanceof Token) {
-            return;
-        }
-
-        // TODO: Implement storeTicket() method.
     }
 }
